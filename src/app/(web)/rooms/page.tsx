@@ -54,7 +54,7 @@ const Rooms = () => {
     });
   };
 
-  const filteredRooms = filterRooms(data || []);
+  const filteredRooms = filterRooms(data ? [data] : []);
 
   return (
     <div className="container mx-auto pt-10">
